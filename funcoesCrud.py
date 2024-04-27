@@ -13,6 +13,9 @@ print("Conexão como o banco de dados feita com sucesso! \n")
 
 # funcao inserir
 def cadastrar ( nome:str, preco:float, id:str, img:str) :
+       ''' Faz a inserção de um produto no banco de dados. A imagem é a URL da imagem do produto na web. 
+       Utilizar formatos encurtados com quantidade de caracteres inferiores a 100'''
+
       
        comando_sql = f"insert into produtos (nome, preco, id, imagem) value ('{nome}', {preco},'{id}','{img}')"
 
